@@ -8,6 +8,9 @@
 
 {%- block extrahead %}
 {{ super() }}
+{% if tracking_snippet %}
+  {{ tracking_snippet }}
+{% endif %}
 <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 {% endblock %}
 
